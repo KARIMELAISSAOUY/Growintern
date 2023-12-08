@@ -1,0 +1,1053 @@
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Glagolitic&display=swap');
+/*  variable declarations */
+:root {
+    --box-shadow: rgb(0 0 0 / 16%) 0px 2px 8px;
+    --green-gradient: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.5));
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    line-height: 1.5;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.20rem 2.5rem;
+    z-index: 10;
+    color: white;
+    background: #2727277b;
+}
+#logo{
+    margin-top: -8px;
+}
+#itlogo{
+    width: 75px;
+    padding-top: -12px;
+}
+
+.dot {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: -3.3px;
+    background-color: #24e170;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-menu{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu > a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.75;
+    font-size: 17px;
+}
+.navbar-menu a:hover{
+    color: #24a9e1;
+    font-weight: 700;
+}
+
+.menu-toggle{
+    padding-top: 5.5px;
+    display: none;
+}
+
+.menu-toggle .bar{
+    width: 18px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out; 
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 970px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/bgb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-title{
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+    letter-spacing: 5;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #ffffff;
+}
+.header-title > span {
+    color: #24e170;
+    text-shadow: 4px 2px 0px #ffffff;
+    font-size: 90px;
+    line-height: 2;
+}
+
+#typing-text {
+    border-right: 3px solid #ffffff; 
+    padding-right: 5px; 
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+
+.search-wrapper{
+    width: 60%;
+    margin: auto;
+    min-width: 300px;
+    height: 3.5rem;
+    position: relative;
+}
+.search-box{
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.81);
+    box-shadow: rgba(2, 11, 20, 0.2) 0px 5px 15px;
+    top: -45%;
+    height: 100%;
+    width:  100%;
+}
+.search-card{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.search-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+
+}
+.search-button{
+    width: 200px;
+    background: #0f2041;
+    border: none;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+.search-button:hover{
+    background: #24e170;
+    color: #ffffff;
+}
+.filter-box{
+    width: 100%;
+    height: auto;
+    font-size: 0.8rem;
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+}
+.filter-dropdown{
+    width: 100%;
+    border-bottom: 1px solid #64b1f5;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-select{
+    border: none;
+    padding: 0.8rem;
+}
+.filter-select:hover{
+    background: #f6f8fa;
+}
+.filter-select:focus{
+    text-transform: uppercase;
+}
+select:focus{
+    color: #0f2041;
+    font-weight: bold;
+}
+option:focus{
+    padding: 2px;
+    border-radius: 10%;
+}
+select option:checked {
+    background: #24a9e1 !important;
+    color: #ffffff;
+}
+.filter-chosen{
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chosen-card{
+    background: #0f2041;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+.chosen-card:hover{
+    background: #000000;
+}
+
+.job-list{
+    margin: 5%;
+    padding: 1.8rem;
+    background-color: #0f2041;
+    border-radius: 15px;
+}
+
+.job-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1.5rem;
+    min-height: 100px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+.opp{
+    font-weight: 700;
+    color: #fff;
+}
+.opp:hover{
+    color: #24e170;
+    padding: 5px 5px;
+    text-align: center;
+    width: 301px;
+    border-radius: 15px;
+    background-color: white;
+}
+.job-card:hover{
+    box-shadow: rgba(247, 247, 247, 0.535) 0px 4px 12px;
+    border: 2px solid #29be03;
+}
+
+.job-name{
+    display: flex;
+    margin: 1px;
+}
+.job-profile{
+    width: 75px;
+    margin: 0.5rem;
+}
+.job-detail{
+    padding: 0 10px;
+}
+
+.job-detail > h4{
+    color: #0f2041;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+.job-detail > p{
+    padding-top: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-line-orient: vertical;
+}
+
+.job-label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-label > a{
+    padding: 0 1rem;
+    margin: 0.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.label-a{
+    background-color: #e13a24;
+    
+}
+
+.label-b{
+    background-color: #0f2041;
+}
+
+.label-c{
+    background-color: #24e170;
+}
+.job-posted{
+    font-size: 16px;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+    font-weight: 600;
+}
+.job-more{
+    display: block;
+    padding: 0.4rem 3.5rem;
+    margin: 45px auto;
+    width: 230px;
+    border-radius: 30px;
+    background-color: #ffffff69;
+    color: #ffffff;
+    border: 1px solid #0f2041;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+}
+
+.job-more:hover{
+    background-color: #000000; 
+    color: white;
+    font-weight: 700;
+}
+.gre:hover{
+    color: #24e170;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.join{
+    width: 100%;
+    height: 475px;
+    background-image: url(img/newjob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    position: relative;
+}
+
+.join::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgb(36,225,112,0.6) 0%, rgba(15, 32, 65, 0.5) 100%),
+                linear-gradient(80deg, rgba(15, 32, 65, 0.65) 0%, transparent 100%);
+
+    z-index: 1;
+}
+.join-detail{
+    min-width: 285px;
+    width: 50%;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.join-detail > h1{
+    font-size: 36px;
+    letter-spacing:2;
+    padding: 10px 0px 10px 0px;
+}
+.join-detail > p{
+    text-align: justify;
+    padding: 10px 0px 10px 0px;
+}
+.exp{
+    letter-spacing: 1.2;
+}
+.exp:hover{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+.join-btn{
+
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    color: rgb(255, 254, 254);
+    background-color: #24e170;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+    cursor: pointer;
+}
+.join-btn:hover{
+    background: transparent;
+    border: 2px solid #24e170;
+    color:  #ffffff;
+}
+
+.features{
+    width:100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+}
+.section-title{
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5;
+    font-size: 37px;
+}
+
+.expp{
+    text-align: justify;
+    font-size: 18px;
+    width: 655px;
+    line-height: 2;
+}
+
+.feature-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    padding: 2% 10%;
+}
+.feature-card > p{
+    padding: 2px;
+}
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.20) 0px 1px 4px ;
+}
+
+.feature-card:hover{
+    box-shadow: rgb(36,169,225,0.16) 0px 1px 5px ;
+    background-color: rgba(36, 225, 112, 0.7); 
+    text-transform: uppercase;
+    transition: 0.3s all;
+    font-weight: 700;
+}
+.feature-image{
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.feature-btn{
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 15px;
+    margin-top: 0.8rem;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.feature-btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+
+/* 2sc variable declarations */
+:root {
+    --white-color: #fff;
+    --support-color: #fb175f;
+    --box-shadow: rgb(0 0 0 / 16%) 0px 2px 8px;
+    --green-gradient: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.5));
+
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+.testimonial {
+    min-height: 365px;
+    position: relative;
+    padding: 50px 0;
+    margin: 50px 0;
+}
+
+
+.testimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--green-gradient), url("img/testimonial.jpg");
+    background-size: cover;
+}
+
+.testimonial-navigation {
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    margin-top: -65px;
+
+}
+
+.swiper-button-prev,
+.testimonial-navigation>div {
+    width: 45px;
+    height: 45px;
+    background: var(--green-gradient);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.testimonial-navigation>div:last-child {
+    margin-left: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-tit{
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+.section-title i:hover{
+    color: #24e170;
+}
+.section-tit::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #24e170;
+}
+
+.section-tit::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 100px;
+    background: #24e170;
+}
+
+.testimonial-card {
+    border: 1px solid #fff;
+    padding: 15px;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.testimonial-card p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.testimonial-card span {
+    color: #fff;
+    position: relative;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.testimonial-card span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    background: #24e170;
+
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    background: #24e170;
+}
+
+
+.user{
+    padding-right: 10px;
+}
+.comment{
+    padding-right: 3px;
+}
+
+.blog{
+    width: 100%; 
+    height: auto;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+.career{
+    font-size: 17px;
+    text-align: center;
+    color: #595959;
+    line-height: 1.5;
+}
+
+.blog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+.blog-card{
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+    cursor: pointer;
+    margin: 1rem;
+    box-shadow: 0 1px 6px 0 rgba(49 53 59 / 12%);
+}
+.blog-image{
+    object-fit: cover;
+    width: 350px;
+    width: 350px;
+}
+.blog-card img:hover{
+    background-color: #24e170;
+    opacity: 0.8;
+    padding: 5px;
+}
+.blog-card:hover{
+    box-shadow: rgba(100, 100, 111,0.2) 0px 7px 29px 0px;
+}
+.blog-detail{
+    padding: 20px;
+}
+.blog-detail p{
+    text-align: justify;
+    opacity: 0.7;
+}
+.blog-detail span{
+   color: #24e170;
+   font-size: 0.7rem;
+}
+
+
+.blog-detail h4{
+   padding: 10px 0;
+}
+
+.divider{
+    margin: 1rem 0;
+    border: 0.5px solid #24e170;
+}
+.blog-more{
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.blog-more:hover{
+    color: #24e170;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.blog-card span{
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f2041;
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:#0f2041;
+    color: white;
+    padding: 3.3rem;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: flex-start;
+    align-items:  flex-start;
+}
+#logo-footer{
+    width: 79px;
+}
+.footer-wrapper h3,
+.footer-wrapper h4{
+    line-height: 3;
+    color: #24e170;
+}
+
+.footer-wrapper p{
+    min-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-wrapper a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+
+.footer-wrapper a:hover{
+    color: #24e170;
+}
+
+.social-media{
+    margin-top: 1rem;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.social-media i:hover{
+    color: #24e170;
+    transform: scale(1.9);
+    padding-left: 2px;
+    transition: 0.27s all ease-in-out;
+}
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */
+@media screen and (max-width: 600px){
+    .menu-toggle , 
+    .bar{
+        display: block;
+        z-index: 3;
+    }
+    .menu-toggle.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(1){
+        transform: translateY(5px) rotate(45deg); 
+    }
+    .menu-toggle.is-active .bar:nth-child(3){
+        transform: translateY(-5px) rotate(-45deg); 
+    }
+    .navbar-menu{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-color: #000000; 
+        display: none;
+        padding: 5rem;
+    }
+    .navbar-menu.active{
+        display: flex;
+    }
+    .navbar-menu a{
+        color: white;
+        padding: 1.5rem;
+    }
+    .header-title{
+        font-size: 38px;
+    }
+    .job-label{
+        display: none;
+    }
+
+    .join-detail{
+        min-width: 255px;
+        width: 50%;
+        z-index: 2;
+        margin-bottom: 1rem;
+    }
+    
+    .join-detail > h1{
+        font-size: 26px;
+        letter-spacing:2;
+        padding: 10px 0px 10px 0px;
+    }
+    .join-detail > p{
+        text-align: justify;
+        padding: 10px 0px 10px 0px;
+    }
+
+
+    .job-list{
+        margin: 5%;
+        padding: 1.8rem;
+        background-color: #0f2041;
+        border-radius: 15px;
+    }
+    
+    .job-card{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 1.5rem;
+        min-height: 100px;
+        border-radius: 10px;
+        align-items: center;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+    }
+    .job-profile{
+        padding: 5px;
+        width: 55px;
+        height: 55px;
+    }
+    .job-detail{
+        padding: 0 10px;
+    }
+    
+    .job-detail > h4{
+        color: #0f2041;
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+    }
+    
+    .job-detail > p{
+        padding-top: 8px;
+        font-size: 12px;
+        text-align: left; 
+        display: -webkit-box;
+        overflow: hidden;
+    }
+    .section-title>h4{
+        padding: 2px;
+    }
+    #logo-footer{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .footer-wrapper p{
+        min-width: 300px;
+        line-height: 1.5;
+    }
+    .search-input::placeholder {
+        font-size: 9px;
+        font-weight: 700;
+        text-align: center;
+    }
+    header{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px){ 
+    .job-posted{
+        display: none;
+    }
+    .Partners {
+        text-align: center;
+        margin-right: 40px;
+      }
+
+  .partlogo img {
+    width: 35px; 
+  }
+  .header-title > span {
+    color: #24e170;
+    text-shadow: 4px 2px 0px #ffffff;
+    font-size: 50px;
+    line-height: 2;
+}
+
+.section-title{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 1.2;
+    font-size: 20px;
+}
+
+.part {
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+    
+  .expp{
+    text-align: justify;
+    font-size: 15px;
+    width: 305px;
+    line-height: 1.5;
+}
+
+  
+}
+
+marquee{
+    padding: 1.2rem 2.2rem;
+    margin: 90px 0px 0px 0px;
+    background-color: #0f2041;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.Partners {
+    text-align: center;
+    padding: 80px 15px;
+  }
+  
+  .part {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hrx{
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto 20px;
+  }
+
+  .logos{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 41px; 
+    padding: 0 20px; 
+  }
+  
+  .partlogo {
+    flex: 0 0 calc(12.5% - 20px);  
+    max-width: calc(12.5% - 20px);  
+    padding: 0;  
+    margin: 0;  
+    animation: logoAnimation 2.5s ease-in-out infinite alternate;  
+  }
+  
+  .partlogo img {
+    width: 50px; 
+  }
+
+  .partlogo img:hover {
+    opacity: 0.9;
+  }
+
+  @keyframes logoAnimation {
+    0% {
+      transform: scale(1);
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0.2;
+    }
+  }
+
+
+
+/* IT CONNECT - Online Job Portal Web Site */
+/* task01  */
+/* Growintern */
+/* Dv by karim */

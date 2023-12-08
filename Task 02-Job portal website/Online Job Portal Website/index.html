@@ -1,0 +1,626 @@
+ <!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Job Portal Website</title>
+    
+    <!-- CSS IMPORTS & Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    
+</head>
+
+<body>
+   
+   <!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+    <nav class="navbar" >
+        <a id="logo" href="#"><img id="itlogo" src="logoItg.png" alt=""></a>
+        <div class="navbar-menu">
+            <a href="index.html">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#companies"">Companies</a>
+            <a href="#testimoni"">testimonial</a>
+            <a href="#Career">Career</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+<header>
+         <h1 class="header-title">
+            F I N D  Y O U R <br> <span id="typing-text"></span> <br> easily !
+        </h1>   
+</header>
+  
+    <div class="search-wrapper">
+        <div class="search-box" >
+            <div class="search-card">
+                <input class="search-input" type="text"  placeholder="What's The job are you looking for">
+                <button class="search-button">Search <i class="fa-brands fa-searchengin"></i></button>
+            </div>
+        </div>
+    </div>
+   
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select name="job-level" id="job-level" class="filter-select">
+                <option selected>IT JOBS</option>
+                <option>Web</option>
+                <option>Data</option>
+                <option>Ai</option>
+                <option>Security</option>
+            </select>
+            <select name="job-fonction" id="job-fonction" class="filter-select">
+                <option selected>JOB FUNCTION</option>
+                <option>Web Developer</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Data Engineer</option>
+                <option>Ai Engineer</option>
+                <option>Security Consultant</option>
+            </select>
+            <select name="employment" id="employment" class="filter-select">
+                <option selected>EMPLOYMENT TYPE</option>
+                <option>Internship</option>
+                <option>Part-Time</option>
+                <option>Full-Time</option>
+            </select>
+            <select name="location" id="location" class="filter-select">
+                <option selected>LOCATION</option>
+                <option>Remote</option>
+                <option>Hybrid</option>
+                <option>Onsite</option>
+            </select>
+            <select name="education" id="education" class="filter-select">
+                <option selected>Education</option>
+                <option>BAC+2 (TS) </option>
+                <option>BAC+3 (Licence Degree) </option>
+                <option>BAC+5 (Master Degree)</option>
+            </select>
+            <input type="date" id="date" class="filter-select">
+        </div>
+        
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                 <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                 <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                <i class="fa fa-times-circle"></i>
+           </div>
+           <div class="chosen-card">
+            <i class="fa fa-times-circle"></i>
+       </div>
+        </div> 
+    </div>
+
+    
+
+  <!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+    <marquee><i class="fa-solid fa-triangle-exclamation"></i> There are new job offers that will be added soon <i class="fa-solid fa-triangle-exclamation"></i></marquee>
+
+    <section class="job-list" id="jobs">
+        <h1 class="opp"> Exciting Opportunity <i class="fa-solid fa-circle-exclamation alert"></i></h1>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/google.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Google <i class="fa-regular fa-circle-check gre green"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i>  Se Engineer</h3>
+                    <p>Exciting Opportunity at Google: Professional Software Engineer Needed! , Google is looking for a Professional Se engineer</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Remote</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/huawei.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Huawei <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior Data Scientist </h3>
+                    <p>Exciting Opportunity at Huawei: Professional Data Scientist Needed! , Huawei is looking for a Professional Data Scientist</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+4 Years</a>
+                <a href="#" class="label-b">Remote</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/microsoft.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Microsoft <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> AI Engineer</h3>
+                    <p>Exciting Opportunity at Microsoft: Professional AI Engineer Needed! , Microsoft is looking for a Professional AI Engineer</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+7 Years</a>
+                <a href="#" class="label-b">Onsite</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/amazon.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Amazon <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior Backend Developer</h3>
+                    <p>Exciting Opportunity at Amazon: Professional Senior Backend Developer Needed! , Amazon is looking for a Professional Dev</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Remote</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/ibm.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>IBM <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> CS engineer </h3>
+                    <p>Exciting Opportunity at IBM: Professional Computer Science Engineer  Needed! , IBM is looking for a Professional CS engineer</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Remote</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/capgemini.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Capgemini <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior FrontEnd Developer</h3>
+                    <p>Exciting Opportunity at Capgemini: Professional Senior FrontEnd Developer  Needed! , Capgemini is looking for a Professional FrontEnd </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+1 Years</a>
+                <a href="#" class="label-b">Onsite</a>
+                <a href="#" class="label-c">Junior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/atos.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Atos <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Full Stack Developer</h3>
+                    <p>Exciting Opportunity at Atos: Professional Full Stack Developer  Needed! , Atos is looking for a Professional Full Stack Developer </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Hybrid</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/cgi.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>CGI <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior Java Developer</h3>
+                    <p>Exciting Opportunity at CGI: Professional Java Developer  Needed! , CGI is looking for a Professional Java Developer </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Hybrid</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/ntt.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>NTT Data <i class="fa-regular fa-circle-check gre"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior IT Project Manager</h3>
+                    <p>Exciting Opportunity at CGI: Professional Senior Project Manager Needed! , CGI is looking for a Professional IT Manager </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Hybrid</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="img/companies/dxc.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>DXC Technology <i class="fa-regular fa-circle-check gre green"></i></h4>
+                    <h3><i class="fa-solid fa-briefcase"></i> Senior .Net Developer</h3>
+                    <p>Exciting Opportunity at DXC: Professional Senior .Net Developer Needed! , DXC is looking for a Professional .Net Developer </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">+5 Years</a>
+                <a href="#" class="label-b">Remote</a>
+                <a href="#" class="label-c">Senior</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+            <button class="job-more">More Jobs <i class="fa-solid fa-magnifying-glass"></i> ...</button>
+    </section>
+
+
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">LET'S START YOUR NEW JOB WITH US</h1>
+            <p class="expp">| Explore a multitude of specialized career paths meticulously tailored to your expertise, linking you with esteemed multinational enterprises at the forefront of technological innovation. Seamlessly access a diverse tapestry of IT job openings spanning software development, cybersecurity ,  data analytics  and more ,amplifying and enriching your professional journey.<p>
+            <p class="exp">explore more! <i class="fa-solid fa-angles-right"></i></p>
+        </div>
+        <button class="join-btn">
+            JOIN NOW!
+        </button>
+    </section>
+    <section class="features" id="companies">
+        <h1 class="section-title"><i class="fa-solid fa-star"></i> Features Companies</h1>
+        <hr class="hrx" />
+        <p>Unlock a multitude of career prospects tailored to your expertise, connecting you with prominent multinational corporations across various IT.<br> <br> Explore a wealth of job opportunities that align with your skills and aspirations.</p>
+        <div class="feature-wrapper">
+            <div class="feature-card">
+                <img src="img/companies/microsoft.png" class="feature-image">
+                <p>Microsoft</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/companies/google.png" class="feature-image">
+                <p>Google</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+            
+
+            <div class="feature-card">
+                <img src="img/companies/ibm.png" class="feature-image">
+                <p>IBM</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+
+            <div class="feature-card">
+                <img src="img/companies/huawei.png" class="feature-image">
+                <p>Huawei</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/companies/atos.png" class="feature-image">
+                <p>Atos</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/companies/ntt.png" class="feature-image">
+                <p>Ntt Data</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/companies/amazon.png" class="feature-image">
+                <p>Amazon</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+
+
+            <div class="feature-card">
+                <img src="img/companies/dxc.png" class="feature-image">
+                <p>Dxc</p>
+                <button class="feature-btn">View <i class="fa-solid fa-eye"></i></button>
+            </div>
+        </div>
+    </section>
+
+   <!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+        <section class="testimonial" id="testimoni">
+            <div class="testimonial-navigation">
+                <div class="button-prev"><i class="bi bi-arrow-left-short"></i></div>
+                <div class="button-next"><i class="bi bi-arrow-right-short"></i></div>
+            </div>
+
+            <div class="container">
+                <h2 class="section-tit">Testimonies </h2>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"></i> Finding job listings that match my qualifications was a breeze on it connect. Thanks to their extensive database, I secured a job that aligns perfectly with my career goals</p>
+                                <span><i class="fa-regular fa-user user"></i> User01 </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>I owe a big thank you to it connect! Their platform provided me with the visibility I needed in the job market, resulting in landing a role that perfectly fits my skills and interests</p>
+                                <span><i class="fa-regular fa-user user"></i> User02</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>Finding job listings that match my qualifications was a breeze on it connect. Thanks to their extensive database, I secured a job that aligns perfectly with my career goals</p>
+                                <span><i class="fa-regular fa-user user"></i> User03</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>Finding job listings that match my qualifications was a breeze on it connect. Thanks to their extensive database, I secured a job that aligns perfectly with my career goals</p>
+                                <span><i class="fa-regular fa-user user"></i> User04</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>I'm incredibly impressed with it connect. The job listings were not only abundant but also aligned perfectly with what I was looking for. I'm now thriving in a position I found through their site</p>
+                                <span><i class="fa-regular fa-user user"></i> User05</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>Finding job listings that match my qualifications was a breeze on it connect. Thanks to their extensive database, I secured a job that aligns perfectly with my career goals</p>
+                                <span><i class="fa-regular fa-user user"></i> User06</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>I owe a big thank you to it connect! Their platform provided me with the visibility I needed in the job market, resulting in landing a role that perfectly fits my skills and interests</p>
+                                <span><i class="fa-regular fa-user user"></i> User07</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>I'm incredibly impressed with it connect. The job listings were not only abundant but also aligned perfectly with what I was looking for. I'm now thriving in a position I found through their site</p>
+                                <span><i class="fa-regular fa-user user"></i> User08</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p><i class="fa-solid fa-comment comment"> </i>I'm incredibly impressed with it connect. The job listings were not only abundant but also aligned perfectly with what I was looking for. I'm now thriving in a position I found through their site</p>
+                                <span><i class="fa-regular fa-user user"></i> User09</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+<!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+<section class="blog" id="Career">
+    <h1 class="section-title"><i class="fa-solid fa-briefcase"></i> Career Advices</h1>
+    <hr class="hrx" />
+    <h4>The Best Pieces of Career Advice To Help You Grow</h4>
+    <br>
+    <p class="career">Developing your desired career takes time, patience and training, and keeping a positive mindset is important. Whether you're at the beginning of your career or have been in your industry for years,<br> there are always opportunities for growth and improvement. Reading career advice could help you build effective habits and make a plan to advance in your field.</p>
+    <div class="blog-wrapper">
+      <div class="blog-card">
+            <img src="img/advice/wake up.png" alt="" class="blog-image">
+            <div class="blog-detail">
+                <span>23 Nov 2023</span>
+                <h4>Wake up early</h4>
+                <p>Even if you become jaded in your position, do your best to show up early and be ready to complete your assigned tasks. Employers may appreciate and notice your effort, & you might continue to stay on good terms if you display your eagerness to work by showing up early.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more"><i class="fa-solid fa-bookmark"></i> Read</a>
+            </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="img/advice/meet.png" alt="" class="blog-image">
+        <div class="blog-detail">
+            <span>23 Nov 2023</span>
+            <h4>Meet new people</h4>
+            <p>It's best to view each person as valuable and worthy of your time and consideration. Opportunities, referrals and growth can come from unexpected places. For example, if you're working a temp job outside your field, the relationships you build with colleagues 
+            </p>
+            <hr class="divider">
+            <a href="#" class="blog-more"><i class="fa-solid fa-bookmark"></i> Read</a>
+        </div>
+  </div>
+
+
+
+  <div class="blog-card">
+    <img src="img/advice/workplace.png" class="blog-image">
+    <div class="blog-detail">
+        <span>24 Nov 2023</span>
+        <h4>Improve your workplaces</h4>
+        <p>Making a difference in an environment that needs structure and leadership can be fulfilling. One way to make a difference may come from stepping into a position that requires you to bring order to chaos. These environments can be challenging, but they highlight your value.
+        </p>
+        <hr class="divider">
+        <a href="#" class="blog-more"><i class="fa-solid fa-bookmark"></i> Read</a>
+    </div>
+    
+</div>
+
+<div class="blog-card">
+    <img src="img/advice/change.png" alt="" class="blog-image">
+    <div class="blog-detail">
+        <span>23 Nov 2023</span>
+        <h4>Stay open to career changes</h4>
+        <p>You can switch roles or industries at any stage in your career. If you're unhappy in your current field, reflect on industries that benefit from transferable skills. For example, if you're a teacher and enjoy working with kids but want to work outside of education.</p>
+        <hr class="divider">
+        <a href="#" class="blog-more"><i class="fa-solid fa-bookmark"></i> Read</a>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+<div class="Partners">
+    <h1 class="section-title" class="part"><i class="fa-solid fa-handshake-simple"></i> Our Partnerships</h1>
+    <hr class="hrx" />
+    <div class="logos">
+      <div class="partlogo"><img src="img/partners/google.png" alt="Partner 1"></div>
+      <div class="partlogo"><img <img src="img/partners/linkedin.png"  alt="Partner 2"></div>
+      <div class="partlogo"><img <img src="img/partners/fiverr.png"  alt="Partner 3"></div>
+      <div class="partlogo"><img <img src="img/partners/fb.png"  alt="Partner 4"></div>
+      <div class="partlogo"><img <img src="img/partners/paypal.png"  alt="Partner 5"></div>
+    </div>
+</div>
+  
+<!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+<footer>
+    <div class="footer-wrapper">
+        <h3><img src="logoIt.png" alt=itconnect" id="logo-footer"></h3>
+        <p>"It Connect" is a best online platform meticulously crafted  to bridge <br> the gap between job seekers and employment opportunitiesWith an .<br>  intuitive interface and user-friendly design, the website serves <br>  as a centralized hub for job listings across diverse It jobs .</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <h4>Explore</h4>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Top Companies</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Services</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Jobs</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Careers</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Countries</a>
+    </div>
+
+    <div class="footer-wrapper">
+        <h4>About</h4>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> News</a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> Recruitment</a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> Interviewing</a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> Events</a>
+        <a href="#"><i class="fa-solid fa-circle-dot"></i> Partnerships</a>
+    </div>
+
+    <div class="footer-wrapper">
+        <h4>Support</h4>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Customer Service</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Privacy</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Help Center</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> FAQ</a>
+        <a href="#"><i class="fa-regular fa-circle-dot"></i> Privacy</a>
+    </div>
+
+    <div class="footer-wrapper">
+        <h4>IT Connect</h4>
+        
+        <a href="#"><i class="fa-solid fa-user-plus"></i> Sign up</a>
+        <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a href="#"><i class="fa-solid fa-star"></i> Premuim</a>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i> Hiring</a>
+    </div>
+
+    
+</footer>
+
+  
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="js.js"></script>
+<!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
+
+</body>
+</html>
+
+<!-- IT CONNECT - Online Job Portal Web Site
+task01  
+Growintern 
+Dv by karim  -->
