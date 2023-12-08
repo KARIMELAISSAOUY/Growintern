@@ -1,7 +1,7 @@
 #Growintern
 ----
 
-![Growintern](growintern.png)
+![Growintern]
 
 ```
 >Growintern
