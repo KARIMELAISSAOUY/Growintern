@@ -23,7 +23,7 @@
 
 
 **Task 2: SHOP STORE**
-<img src="shopstore.png>
+<img src="shopstore.png">
 
 
 
